@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    {% now 'm' as current_month %}
+    {% now 'd' as current_day %}
+    {% if current_month == '2' and current_day == '28' %}
+    예
+    {% else %}
+    아니요
+    {% endif %}
+</body>
+</html>
